@@ -1,5 +1,5 @@
-import React from "react";
-import NewsfeedItem from "./NewsfeedItem";
+import React from 'react'
+import NewsfeedItem from './NewsfeedItem';
 
 const Newsfeed = () => {
 
@@ -21,16 +21,23 @@ const Newsfeed = () => {
     }
   ]
 
+  const handleRepostButtonClick = (message) => {
+    alert(`You reposted a message by ${message.username}.`)
+  }
+
   return (
     <div className="newsfeed">
       {
-        messages.map(msg => <NewsfeedItem
-          key={msg.text}
-          message={msg}
-        ></NewsfeedItem>)
+        messages.map(msg => (
+          <NewsfeedItem
+            key={msg.text}
+            message={msg}
+            onRepostButtonClick={(message) => handleRepostButtonClick(message)}
+          ></NewsfeedItem>
+        ))
       }
     </div>
   )
-};
+}
 
 export default Newsfeed;
