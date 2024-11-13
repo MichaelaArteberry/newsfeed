@@ -5,12 +5,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const NavbarList = () => (
     <>
-        <Navbar sticky="top" bg="dark" expand="lg" data-bs-theme="dark" className="w-100">
+        <Navbar sticky="top" bg="dark" expand="lg" data-bs-theme="dark" className="p-3">
             <Navbar.Brand href="#home">Practice Newsfeed App</Navbar.Brand>
-            <Nav className="ms-auto">
-                <Nav.Link className="me-5" href="#home">Home</Nav.Link>
-                <Nav.Link className="me-5" href="#features">Newsfeed</Nav.Link>
-                <Nav.Link className="me-5" href="#pricing">Messages</Nav.Link>
+            <Nav>
+                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link>Newsfeed</Nav.Link>
+                <Nav.Link>Messages</Nav.Link>
             </Nav>
         </Navbar>
     </>

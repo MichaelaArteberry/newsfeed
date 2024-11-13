@@ -26,7 +26,7 @@ const Newsfeed = () => {
   }
 
   return (
-    <div className="newsfeed">
+    <div>
       {
         messages.map(msg => (
           <NewsfeedItem

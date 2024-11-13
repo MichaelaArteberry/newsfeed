@@ -7,9 +7,7 @@ function App() {
   return (
     <>
       <NavbarList />
-      <div className="App-content">
         <Newsfeed />
-      </div>
     </>
   );
 }
