@@ -26,7 +26,7 @@ const Newsfeed = () => {
   }
 
   return (
-    <div>
+    <div className='d-flex flex-column align-items-center m-5'>
       {
         messages.map(msg => (
           <NewsfeedItem
